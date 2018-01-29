@@ -1,0 +1,26 @@
+<view class="body">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+  
+<view class="section">
+  <!-- <view class="title-main-before"></view> -->
+  <text class="title-main">小孙水果店</text>
+  <!-- <view class="title-main-after"></view> -->
+</view>
+
+<view class="section intro">
+  <text class="section-text">相关人员简介</text>
+  <scroll-view class="scroll-view_H" scroll-x>
+    <view id="green" class="scroll-view-item_H bc_green"></view>
+    <view id="red"  class="scroll-view-item_H bc_red"></view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+    <view id="blue" class="scroll-view-item_H bc_blue"></view>
+  </scroll-view>
+</view>
+
+</view>

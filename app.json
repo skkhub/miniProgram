@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/address/address",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTitleText": "小孙水果店",
+    "navigationBarBackgroundColor": "#2CB044",
+    "backgroundColor": "#FEEA96"
+  },
+  "tabBar": {
+    "color": "#eee",
+    "postion": "bottom",
+    "backgroundColor": "#2CB044",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/address/address",
+        "text": "地址"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
