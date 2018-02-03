@@ -14,13 +14,7 @@
 </view>
 
 <view class="section intro">
-  <text class="section-text">相关人员简介</text>
-  <scroll-view class="scroll-view_H" scroll-x>
-    <view id="green" class="scroll-view-item_H bc_green"></view>
-    <view id="red"  class="scroll-view-item_H bc_red"></view>
-    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
-    <view id="blue" class="scroll-view-item_H bc_blue"></view>
-  </scroll-view>
+  <button class="page-body-button" type="primary" bindtap="openLocation">查看位置</button>
 </view>
 
 </view>

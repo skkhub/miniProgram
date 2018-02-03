@@ -31,10 +31,19 @@ Page({
         name: '功能4',
         url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
       }
-    ]
+    ],
+    
   },
   
+  openLocation: function (e) {
 
+    wx.openLocation({
+      longitude: 116.401557,
+      latitude: 39.813646,
+      name: 'abc',
+      address: 'address'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
