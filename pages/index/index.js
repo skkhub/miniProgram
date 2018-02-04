@@ -10,38 +10,43 @@ Page({
       '/static/images/banner1.jpg',
       '/static/images/banner2.jpg',
     ],
-    indicatorDots: true,
+    indicatorDots: false,
     autoplay: true,
     interval: 5000,
     duration: 500,
-    tools: [
-      {
-        name: '功能1',
-        url: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
-      },
-      {
-        name: '功能2',
-        url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
-      },
-      {
-        name: '功能3',
-        url: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
-      },
-      {
-        name: '功能4',
-        url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-      }
-    ],
+    photosList: [
+      '/static/images/title_main_bg.jpg',
+      '/static/images/banner1.jpg',
+      '/static/images/banner2.jpg',
+    ]
     
   },
   
   openLocation: function (e) {
-
     wx.openLocation({
       longitude: 116.401557,
       latitude: 39.813646,
       name: 'abc',
       address: 'address'
+    })
+  },
+
+  makePhoneCall: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '13691288631',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+
+  previewImage: function (e) {
+    wx.previewImage({
+      current: '',
+      urls: [''],
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
     })
   },
   /**

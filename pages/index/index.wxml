@@ -1,4 +1,9 @@
 <view class="body">
+<view class="section title">
+  <!-- <view class="title-main-before"></view> -->
+  <text class="title-main">小孙水果店</text>
+  <!-- <view class="title-main-after"></view> -->
+</view>
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
@@ -7,14 +12,25 @@
   </block>
 </swiper>
   
-<view class="section">
-  <!-- <view class="title-main-before"></view> -->
-  <text class="title-main">小孙水果店</text>
-  <!-- <view class="title-main-after"></view> -->
-</view>
 
+<!-- <view class="photos-list">
+  <block wx:for="{{photosList}}">
+    <image src="{{item}}"/>
+  </block>
+</view> -->
 <view class="section intro">
-  <button class="page-body-button" type="primary" bindtap="openLocation">查看位置</button>
+  <!-- <view class="photos">
+    <text class="iconfont icon-zhaopian"></text><text class="intro-text">门店照片</text>
+  </view> -->
+  <view class="address" bindtap="openLocation">
+    <text class="iconfont icon-dizhi"></text><text class="intro-text">北京市丰台区和义西里小区东门口</text>
+  </view>
+  <view class="business-hours">
+    <text class="iconfont icon-shijian"></text><text class="intro-text">09:00-22:00</text>
+  </view>
+  <view class="telephone" bindtap="makePhoneCall">
+    <text class="iconfont icon-dianhua"></text><text class="intro-text">13691288631</text>
+  </view>
 </view>
 
 </view>
